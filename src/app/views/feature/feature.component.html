@@ -1,0 +1,50 @@
+<div class="feature-div">
+  <div class="container">
+    <div class="main-heading">
+      <div class="text-center">
+        <span>Featured </span>
+        <span>Ads</span>
+      </div>
+      <p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    </div>
+    <div class="navigation">
+      <button mat-button>
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button mat-button>
+        <i class="fa fa-chevron-right"></i>
+      </button>
+
+    </div>
+    <div class="row">
+      <!-- Start Grid Column -->
+      <ng-container *ngFor="let i of featuredData, let x = index">
+        <div class="col-md-6 col-lg-3">
+          <mat-card class="example-card">
+            <img mat-card-image [src]="i.imgpath" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <h3>{{i.name}}</h3>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="location d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>Atlanta,GA
+                </div>
+                <div>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  {{ i.time | date: 'shortTime'}}
+                </div>
+              </div>
+              <mat-divider inset=true></mat-divider>
+              <div class="d-flex p-3">
+                <h3>{{i.price | currency }}</h3>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>

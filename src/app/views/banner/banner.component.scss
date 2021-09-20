@@ -1,0 +1,60 @@
+.banner {
+  background: url(../../../assets/imgs/back7.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 60vh;
+
+  min-height: 60vh;
+  min-width: 100%;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.banner:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 0, 97, 0.9);
+}
+
+.banner .text {
+  margin: 50px 0;
+  color: white;
+}
+.banner .text h1 {
+  font-size: 60px;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+ .form-field-full {
+  width: 100%;
+
+}
+//::ng-deep .mat-form-field-outline {
+  //::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+  background-color: white;
+  border-radius: 6px !important;
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  -ms-border-radius: 6px !important;
+  -o-border-radius: 6px !important;
+}
+// ::ng-deep .mat-select-content {
+//   background-color: white;
+// }
+.input-div button
+{
+  color: white;
+  background-color: #1e90ff;
+  //padding: 8px 20px 8px 20px;
+  padding: 1em;
+  margin-top: 0.25em;
+//height: 50px;
+line-height: 1.6;
+}

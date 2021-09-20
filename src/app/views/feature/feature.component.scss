@@ -1,0 +1,26 @@
+.example-card img {
+  height: 300px;
+}
+.feature-div {
+  margin: 100px;
+}
+.example-card mat-card-content {
+  height: 50px;
+  overflow: visible;
+}
+.example-card mat-card-content h3{
+  color :#1e90ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.example-card mat-card-actions .location{
+color :#555555;
+opacity: 0.5;
+}
+.example-card mat-card-actions h3{
+  color:#555555;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}

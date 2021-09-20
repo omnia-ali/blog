@@ -1,0 +1,37 @@
+.toolbar {
+  justify-content: space-between;
+background-color: white;
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 50px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  line-height: 50px;
+}
+ul li {
+  padding: 0 20px 0 20px;
+}
+ul li:hover,
+ul li:hover a {
+  background-color: #1e90ff;
+  color: white;
+}
+ul li a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.ad-button {
+  padding: 0 20px 0 20px;
+  background-color: #40c576;
+  color: white;
+}
+.reg-button {
+  padding: 0 20px 0 20px;
+  background-color: #555555;
+  color: white;
+}

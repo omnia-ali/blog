@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+}
+:root {
+  --main-color: #1e90ff;
+  --secoundary-color: #555555;
+}
+.main-heading {
+  text-align: center;
+  position: relative;
+}
+.main-heading div {
+  font-size: 40px;
+  font-weight: var(--semi-bold-weight);
+
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.main-heading span:first-child {
+  font-weight: bold;
+  color: black;
+}
+.main-heading span:last-child {
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 30px;
+  }
+}
+.main-heading p {
+  width: 60%;
+  max-width: 100%;
+  font-weight: var(--ligth-weight);
+  font-size: 15px;
+
+  color: var(--section-color);
+  padding: 20px 0 20px 0;
+  margin: 0 auto 20px;
+}
+
+.main-heading ::after {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid var(--main-color);
+  right: 46%;
+  top: 40px;
+  width: 100px;
+}

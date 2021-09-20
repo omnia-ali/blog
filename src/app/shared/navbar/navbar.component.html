@@ -1,0 +1,28 @@
+<mat-toolbar class="toolbar">
+  <!-- <mat-toolbar-row> -->
+  <button mat-icon-button class="logoButton d-flex align-items-start">
+    <button mat-icon-button aria-label="Example icon button with a menu icon" (click)="!sideNavToggel">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span> blog</span>
+  </button>
+
+  <div class="menuItems d-flex justify-content-end  align-items-center">
+    <ul>
+      <li>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <a routerLink="/contact">Contact Us</a>
+
+      </li>
+      <li>
+        <a routerLink="/about">about Us</a>
+      </li>
+    </ul>
+     <button mat-button class="m-1  ad-button"> Post & AD</button>
+    <button mat-button class="m-1  reg-button">Register</button>
+  </div>
+
+  <!-- </mat-toolbar-row> -->
+</mat-toolbar>

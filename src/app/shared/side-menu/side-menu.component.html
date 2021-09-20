@@ -1,0 +1,15 @@
+<!-- <mat-sidenav-container>
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content>
+        <ng-content ></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container> -->
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="sideNavToggel" class="example-sidenav">
+     Sidenav
+    </mat-sidenav>
+  <mat-sidenav-content>
+   <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
