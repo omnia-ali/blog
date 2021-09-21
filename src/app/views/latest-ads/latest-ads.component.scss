@@ -23,3 +23,25 @@
   margin: 0;
 }
 
+.navigation button {
+  background-color: #eeee;
+  min-width: auto;
+  margin-right: 10px;
+}
+.box .icon{
+  background-color: gray;
+  padding:15px 25px;
+  color: white;
+  margin-bottom: 20px;
+}
+.box h3
+{
+  color: #1e90ff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.box p{
+  color: #555555;
+  opacity: 0.8;
+}

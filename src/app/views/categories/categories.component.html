@@ -1,0 +1,27 @@
+<div class="home-div">
+  <div class="container">
+    <div class="main-heading">
+      <div class="text-center">
+        <span>Browse </span>
+        <span>Categories</span>
+      </div>
+      <p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    </div>
+    <div class="row">
+      <!-- Start Grid Column -->
+      <ng-container *ngFor="let i of featuredData, let x = index">
+        <div class="img-div col-md-4 col-lg-2 text-center">
+          <div class="mb-5">
+            <img [src]="i.imgpath" alt="" style="width: 80px; height: 80px;">
+            <p class="img-count">{{i.name}}
+              <span>({{i.count}})</span>
+            </p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

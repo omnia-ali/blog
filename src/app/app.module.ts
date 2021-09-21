@@ -8,12 +8,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './views/banner/banner.component';
 import { FeatureComponent } from './views/feature/feature.component';
+import { CategoriesComponent } from './views/categories/categories.component';
+import { LatestAdsComponent } from './views/latest-ads/latest-ads.component';
+import { HappyCustomersComponent } from './views/happy-customers/happy-customers.component';
+import { DownloadComponent } from './views/download/download.component';
+import { AdbyCityComponent } from './views/adby-city/adby-city.component';
+import { ContactusComponent } from './views/contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BannerComponent,
-    FeatureComponent
+    FeatureComponent,
+    CategoriesComponent,
+    LatestAdsComponent,
+    HappyCustomersComponent,
+    DownloadComponent,
+    AdbyCityComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,13 @@
   min-width: 100%;
   position: relative;
   z-index: 0;
-  display: flex;
+
+
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  /* overflow: initial; */
+  height: auto;
 }
 .banner:after {
   z-index: -1;
@@ -19,11 +23,11 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 0, 97, 0.9);
+  background-color: rgb(15 18 85 / 90%);
 }
 
 .banner .text {
-  margin: 50px 0;
+  margin: 150px 0 50px 0;
   color: white;
 }
 .banner .text h1 {
@@ -31,13 +35,10 @@
   font-weight: 550;
   text-transform: capitalize;
 }
- .form-field-full {
+.form-field-full {
   width: 100%;
-
 }
-//::ng-deep .mat-form-field-outline {
-  //::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-    ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
   background-color: white;
   border-radius: 6px !important;
   -webkit-border-radius: 6px !important;
@@ -45,16 +46,10 @@
   -ms-border-radius: 6px !important;
   -o-border-radius: 6px !important;
 }
-// ::ng-deep .mat-select-content {
-//   background-color: white;
-// }
-.input-div button
-{
+.input-div button {
   color: white;
   background-color: #1e90ff;
-  //padding: 8px 20px 8px 20px;
-  padding: 1em;
-  margin-top: 0.25em;
-//height: 50px;
-line-height: 1.6;
+  padding: 13px 20px 13px 20px;
+  margin-top: 0.1em;
+  line-height: 1.6;
 }

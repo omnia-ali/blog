@@ -1,0 +1,26 @@
+<div class="home-div gray-bg">
+  <div class="container">
+    <div class="main-heading">
+      <div class="text-center">
+        <span>Ads By </span>
+        <span>Cities</span>
+      </div>
+      <p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    </div>
+    <div class="row m-5">
+      <div *ngFor="let city of cities" class="column col-3 ">
+        <span>{{city.cityName}}</span>
+        <span> ({{city.count}} teeutors)</span>
+      </div>
+    </div>
+    <div class="row  justify-content-center  ">
+      <!-- Start Grid Column -->
+      <button mat-button class="blue-button "> view all latest Ads</button>
+      <div class="text-center m-5"> <img style=" width: 500px;" src="/assets/imgs/img-adv.png" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<div class="home-div gray-bg">
+  <div class="container">
+    <div class="main-heading">
+      <div class="text-center">
+        <span>latest </span>
+        <span>Ads</span>
+      </div>
+      <p class="section-description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
+    </div>
+
+    <div class="row  justify-content-center  ">
+      <!-- Start Grid Column -->
+      <ng-container *ngFor="let i of Data, let x = index">
+        <div class="col-md-6 col-lg-3 mb-5">
+          <mat-card class="ad-card  mat-elevation-z8">
+            <img mat-card-image [src]="i.imgpath" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <h3>{{i.name}}</h3>
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="location d-flex justify-content-between">
+                <div>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>Atlanta,GA
+                </div>
+                <div>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  {{ i.time | date: 'shortTime'}}
+                </div>
+              </div>
+              <mat-divider inset=true></mat-divider>
+              <div class="d-flex p-3">
+                <h3>{{i.price | currency }}</h3>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </ng-container>
+
+      <button mat-button class="blue-button "> view all latest Ads</button>
+      <div class="text-center m-5"> <img style=" width: 500px;" src="/assets/imgs/img-adv.png" />
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row  text-center m-5">
+      <div class="box col">
+        <i class="icon fa fa-user fa-4x"></i>
+        <h3>Create a acount free</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla ea facere eius sunt fugiat dicta
+          nostrum natus, consequatur non obcaecati mollitia quaerat saepe praesentium et aliquam temporibus quos
+          tenetur?</p>
+      </div>
+      <div class="box col">
+        <i class="icon fa fa-black-tie fa-4x" aria-hidden="true"></i>
+        <h3>Post your free ad</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla ea facere eius sunt fugiat dicta
+          nostrum natus, consequatur non obcaecati mollitia quaerat saepe praesentium et aliquam temporibus quos
+          tenetur?</p>
+      </div>
+      <div class="box col">
+        <i class="icon fa fa-file   fa-4x" aria-hidden="true"></i>
+        <h3>sold or buy</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla ea facere eius sunt fugiat dicta
+          nostrum natus, consequatur non obcaecati mollitia quaerat saepe praesentium et aliquam temporibus quos
+          tenetur?</p>
+      </div>
+    </div>
+  </div>

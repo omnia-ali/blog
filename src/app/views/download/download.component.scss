@@ -1,0 +1,30 @@
+.back-overlay {
+  background: url(../../../assets/imgs/back7.jpg) no-repeat center center fixed;
+  background-size: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+.back-overlay:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15 18 85 / 90%);
+}
+
+.white-heading {
+  color: white;
+}
+
+.download-box {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border-color: #ccc;
+  margin-right: 20px;
+}
