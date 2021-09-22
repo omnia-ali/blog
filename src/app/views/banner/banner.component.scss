@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  /* overflow: initial; */
   height: auto;
 }
 .banner:after {
@@ -35,6 +34,10 @@
   font-weight: 550;
   text-transform: capitalize;
 }
+.banner .text p {
+display:block;
+  font-weight: 550;
+}
 .form-field-full {
   width: 100%;
 }
@@ -53,3 +56,28 @@
   margin-top: 0.1em;
   line-height: 1.6;
 }
+
+
+// Small devices (landscape phones, 576px and up)
+
+@media (max-width: 576px)  {
+  .banner .text h1 {
+    font-size: 35px;
+    font-weight: 400;
+   }
+ }
+
+ // Medium devices (tablets, 768px and up)
+ @media (max-width: 768px) {
+  .banner .text h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+   .banner .text h1 {
+  font-size: 50px;
+  font-weight: 400;
+
+} }

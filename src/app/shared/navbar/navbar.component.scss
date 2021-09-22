@@ -1,33 +1,75 @@
 .toolbar {
   justify-content: space-between;
   background-color: white;
+  position: relative;
 }
 .mat-toolbar-row,
 .mat-toolbar-single-row {
   height: 50px;
 }
-ul {
+.menuItems{
+ display: flex;
+ justify-content:flex-end ;
+ align-items:center;
+}
+
+
+.toolbar  ul {
   line-height: 51px;
 }
-ul li {
+.toolbar  ul li {
   padding: 0 20px 0 20px;
 }
-ul li:hover,
-ul li:hover a {
+.toolbar  ul li:hover,
+.toolbar  ul li:hover a {
   background-color: #1e90ff;
   color: white;
 }
-ul li a {
+.toolbar  ul li a {
   text-decoration: none;
   color: #555555;
 }
-.ad-button {
+.toolbar .ad-button {
   padding: 0 20px 0 20px;
   background-color: #40c576;
   color: white;
 }
-.reg-button {
+.toolbar  .reg-button {
   padding: 0 20px 0 20px;
   background-color: #555555;
   color: white;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .toolbar .toggel-menu {
+    display: none;
+
+  }
+}
+
+
+
+@media (max-width: 767px) {
+.toolbar .menuItems {
+    display: none ;
+  }
+  .toolbar .toggel-menu:hover +  .menuItems,ul {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  background-color: rgb(15 18 85 / 90%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 3;
+    justify-content:center !important ;
+    align-items:center !important;
+  }
+  .toolbar  ul li a{
+    color:white;
+  }
+
 }

@@ -10,8 +10,8 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
     </div>
-    <div class="row m-5 ">
-      <div *ngFor="let customer of customers" class="col box   mat-elevation-z8">
+    <div class="row m-5 justify-content-center">
+      <div *ngFor="let customer of customers" class="col-md-12 col-lg-5  box   mat-elevation-z8">
         <img  [src]="customer.imgpath" alt="">
         <h1 class="mb-1 title">{{customer.name}}<span>({{customer.title}})</span></h1>
         <h4 class=" mb-1 location">{{customer.locationCity}},{{customer.locationCountry}}</h4>

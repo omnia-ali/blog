@@ -1,26 +1,29 @@
 <div class="banner d-flex">
-  <div class="text d-flex justify-content-center   align-items-center">
+  <div class="container">
+  <div class="text d-flex justify-content-center   align-items-center flex-column">
     <h1>World's largest classifieds sites</h1>
+    <p>Search from over 99,00,000 Active ads & Post free unlimited classifieds ads!</p>
   </div>
-  <div class="container input-div">
-    <div class="row">
-      <div class="col-8">
-        <mat-form-field appearance="fill"  class="form-field-full  me-0 ms-0" >
+  <div class=" input-div">
+    <div class="row flex-sm-column flex-xl-row text-sm-center">
+      <div class="col-sm-12 col-xl-8">
+        <mat-form-field appearance="fill"  class="form-field-full   me-0 ms-0" >
           <mat-label>What you are looking for</mat-label>
           <input matInput placeholder="What you are looking for">
         </mat-form-field>
       </div>
       <div class="col">
         <mat-form-field appearance="fill" class="form-field-full  me-0 ms-0">
-          <mat-label>Select me</mat-label>
+          <mat-label>Select City</mat-label>
           <mat-select>
             <mat-option value="option">Option</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
-      <div class="col">
+      <div class="col mb-sm-3">
         <button mat-button class="text-uppercase  me-0 ms-0">Search Ad</button>
       </div>
     </div>
   </div>
+</div>
 </div>

@@ -11,7 +11,7 @@
         laboris nisi ut aliquip ex ea commodo consequat. lvoluptatem.</p>
     </div>
     <div class="row m-5">
-      <div *ngFor="let city of cities" class="column col-3 ">
+      <div *ngFor="let city of cities" class="column col-ms-12 col-md-5 col-lg-3">
         <span>{{city.cityName}}</span>
         <span> ({{city.count}} teeutors)</span>
       </div>
@@ -19,7 +19,10 @@
     <div class="row  justify-content-center  ">
       <!-- Start Grid Column -->
       <button mat-button class="blue-button "> view all latest Ads</button>
-      <div class="text-center m-5"> <img style=" width: 500px;" src="/assets/imgs/img-adv.png" />
+      <div class="text-center m-5">
+        <!-- <img style=" width: 500px;" src="/assets/imgs/img-adv.png" /> -->
+        <img class="adv-img"  src="/assets/imgs/img-adv.png" />
+
       </div>
     </div>
   </div>

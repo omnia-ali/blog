@@ -1,13 +1,18 @@
 <mat-toolbar class="toolbar">
-  <!-- <mat-toolbar-row> -->
-  <button mat-icon-button class="logoButton d-flex align-items-start">
-    <button mat-icon-button aria-label="Example icon button with a menu icon" (click)="!sideNavToggel">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span> blog</span>
-  </button>
 
-  <div class="menuItems d-flex justify-content-end  align-items-center">
+ <div class="logo ">
+      <img class="logo-img" src="../../../assets/imgs/logo1.png" alt="">
+      <div class="logo-text">
+        <span>post</span>
+        <span> & </span>
+        <span>buy</span>
+        <span>free classified</span>
+      </div>
+ </div>
+ <i class="fa fa-bars toggel-menu"></i>
+
+  <div class="menuItems ">
+
     <ul  class="list-unstyled d-flex m-0">
       <li>
         <a routerLink="/home">Home</a>
@@ -24,5 +29,4 @@
     <button mat-button class="m-1  reg-button">Register</button>
   </div>
 
-  <!-- </mat-toolbar-row> -->
 </mat-toolbar>

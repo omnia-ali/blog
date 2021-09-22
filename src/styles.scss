@@ -15,6 +15,35 @@ body {
   --secoundary-color: #555555;
 }
 
+//logo
+.logo {
+  text-transform:uppercase;
+  color:black;
+  display:flex;
+  justify-content:start;
+
+  line-height: 1.3;
+  font-weight:500;
+  letter-spacing: 2px;
+  font-size:17px;
+}
+.logo .logo-img{
+  width:30px;
+  height:30px;
+  margin-right:5px;
+  margin-top: 5px;
+}
+.logo .logo-text span:nth-child(3) ,
+.logo .logo-text span:first-child{
+  color : #1e90ff;
+}
+.logo .logo-text span:last-child{
+  display: block;
+  color:darkgray;
+  font-size:14px;
+}
+
+
 //main heading style
 .main-heading {
   text-align: center;
@@ -63,6 +92,8 @@ body {
 .home-div {
   width: 100%;
   padding: 100px 0 100px;
+  min-height: calc(100vh - 80px);
+
 }
 .gray-bg {
   background-color: #e6e6e6;
@@ -82,3 +113,13 @@ width: fit-content;
   min-width: auto;
   margin-right: 10px;
 }
+//adv-img
+.adv-img{
+  width:500px;
+}
+
+@media (max-width: 767px) {
+  .adv-img {
+width:300px;
+  }
+   }
